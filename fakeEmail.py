@@ -12,6 +12,7 @@ def generate_ai_string(length=8):
 def normalize_dots(text):
     """Barcha ketma-ket kelgan nuqtalarni bitta nuqtaga qisqartiradi."""
     return '.'.join(filter(None, text.split('.')))
+
 def generate_gmail_variants(email):
     username, domain = email.split('@')
     if domain.lower() != 'gmail.com':
