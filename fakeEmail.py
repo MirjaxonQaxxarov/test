@@ -9,6 +9,7 @@ def generate_ai_string(length=8):
     
     suffix = ''.join(random.choices(string.ascii_lowercase + string.digits, k=length - 2))
     return "ai" + suffix
+
 def generate_gmail_variants(email):
     username, domain = email.split('@')
     if domain.lower() != 'gmail.com':
