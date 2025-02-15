@@ -20,7 +20,7 @@ def generate_gmail_variants(email):
             new_username = username[:i] + '.' + username[i:]
             variants.add(new_username + "@" + domain)
     
-    return list(variants)
+    return list(variants)push qilsin
 
 def generate_random_username(length=8):
     return ''.join(random.choices(string.ascii_lowercase + string.digits, k=length))
