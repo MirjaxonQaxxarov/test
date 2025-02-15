@@ -30,7 +30,7 @@ def save_to_csv(emails, filename="gmail_variants.csv"):
         for email in emails:
             username = email.split('@')[0]
             original_username = username.replace('.', '')
-            password = "P@ssw0rd123"  # O'zingiz istagan parolni generatsiya qiling
+            password = "Mirjaxon2804.g"  # O'zingiz istagan parolni generatsiya qiling
             writer.writerow([original_username, username, email, password])
 
 def main():
