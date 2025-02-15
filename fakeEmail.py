@@ -35,7 +35,7 @@ def save_to_csv(emails, filename="gmail_variants.csv"):
         writer.writerow(["Random Username", "Generated Email", "Password"])
         for email in emails:
             username = generate_ai_string()
-            password = username[::-1] +  # O'zingiz istagan parolni generatsiya qiling
+            password = username[::-1] + "" # O'zingiz istagan parolni generatsiya qiling
             writer.writerow([username, email, password])
 
 def main():
