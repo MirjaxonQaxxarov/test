@@ -16,10 +16,13 @@ def generate_gmail_variants(email):
     
     positions = list(range(1, len(username)))  # Possible positions to insert '.'
     variants = set()
-    for i in range(1, len(username)):
-        if username[i - 1] != '.' and username[i] != '.':  # '.' ketma-ket kelmasligi uchun
-            new_username = username[:i] + '.' + username[i:]
-            variants.add(new_username + "@" + domain)
+    
+    for r in range(1, len(positions) + 1):
+        for combination in itertools.combinations(positions, r):
+            new_username = list(username)
+            for pos in combination:
+                new_username.insert(pos, '.')
+            variants.add("".join(new_username) + "@" + domain)
     
     return list(variants)
 
