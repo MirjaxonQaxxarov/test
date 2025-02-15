@@ -1,5 +1,7 @@
 import itertools
 import csv
+import random
+import string
 
 def generate_gmail_variants(email):
     username, domain = email.split('@')
@@ -18,23 +20,35 @@ def generate_gmail_variants(email):
     
     return list(variants)
 
+def generate_random_username(length=8):
+    return ''.join(random.choices(string.ascii_lowercase + string.digits, k=length))
+
 def save_to_csv(emails, filename="gmail_variants.csv"):
     with open(filename, mode='w', newline='', encoding='utf-8') as file:
         writer = csv.writer(file)
-        writer.writerow(["Email", "Password"])
+        writer.writerow(["Original Username", "Generated Username", "Generated Email", "Password"])
         for email in emails:
+            username = email.split('@')[0]
+            original_username = username.replace('.', '')
             password = "P@ssw0rd123"  # O'zingiz istagan parolni generatsiya qiling
-            writer.writerow([email, password])
+            writer.writerow([original_username, username, email, password])
 
 def main():
-    original_email = input("Gmail pochta manzilini kiriting: ")
-    try:
-        variants = generate_gmail_variants(original_email)
-        print(f"{len(variants)} ta variant yaratildi.")
-        save_to_csv(variants)
-        print("Variantlar 'gmail_variants.csv' fayliga saqlandi.")
-    except ValueError as e:
-        print(f"Xatolik: {e}")
+    original_email = input("Gmail pochta manzilini kiriting yoki bo'sh qoldiring (random username yaratish uchun): ")
+    
+    if original_email.strip():
+        try:
+            variants = generate_gmail_variants(original_email)
+            print(f"{len(variants)} ta variant yaratildi.")
+        except ValueError as e:
+            print(f"Xatolik: {e}")
+            return
+    else:
+        variants = [generate_random_username() + "@gmail.com" for _ in range(10)]  # 10 random usernames yaratish
+        print("Random usernamelar yaratildi.")
+    
+    save_to_csv(variants)
+    print("Variantlar 'gmail_variants.csv' fayliga saqlandi.")
 
 if __name__ == "__main__":
     main()
