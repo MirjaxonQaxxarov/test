@@ -21,18 +21,16 @@ def generate_gmail_variants(email):
     return list(variants)
 
 def generate_random_username(length=8):
-    username = ''.join(random.choices(string.ascii_lowercase + string.digits, k=length))
-    return username if username[0].isalpha() else 'a' + username[1:]
+    return ''.join(random.choices(string.ascii_lowercase + string.digits, k=length))
 
 def save_to_csv(emails, filename="gmail_variants.csv"):
     with open(filename, mode='w', newline='', encoding='utf-8') as file:
         writer = csv.writer(file)
-        writer.writerow(["Original Username", "Generated Username", "Generated Email", "Password"])
+        writer.writerow(["Random Username", "Generated Email", "Password"])
         for email in emails:
             username = email.split('@')[0]
-            original_username = username.replace('.', '') if '.' in username else username
             password = "P@ssw0rd123"  # O'zingiz istagan parolni generatsiya qiling
-            writer.writerow([original_username, username, email, password])
+            writer.writerow([username, email, password])
 
 def main():
     original_email = input("Gmail pochta manzilini kiriting yoki bo'sh qoldiring (random username yaratish uchun): ")
