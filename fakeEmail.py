@@ -9,7 +9,9 @@ def generate_ai_string(length=8):
     
     suffix = ''.join(random.choices(string.ascii_lowercase + string.digits, k=length - 2))
     return "ai" + suffix
-normalize_dots
+def normalize_dots(text):
+    """Barcha ketma-ket kelgan nuqtalarni bitta nuqtaga qisqartiradi."""
+    return '.'.join(filter(None, text.split('.')))
 def generate_gmail_variants(email):
     username, domain = email.split('@')
     if domain.lower() != 'gmail.com':
