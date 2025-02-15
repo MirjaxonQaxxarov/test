@@ -21,7 +21,8 @@ def generate_gmail_variants(email):
     return list(variants)
 
 def generate_random_username(length=8):
-    return ''.join(random.choices(string.ascii_lowercase + string.digits, k=length))
+    username = ''.join(random.choices(string.ascii_lowercase + string.digits, k=length))
+    return username if username[0].isalpha() else 'a' + username[1:]
 
 def save_to_csv(emails, filename="gmail_variants.csv"):
     with open(filename, mode='w', newline='', encoding='utf-8') as file:
@@ -29,8 +30,8 @@ def save_to_csv(emails, filename="gmail_variants.csv"):
         writer.writerow(["Original Username", "Generated Username", "Generated Email", "Password"])
         for email in emails:
             username = email.split('@')[0]
-            original_username = username.replace('.', '')
-            password = "Mirjaxon2804.g"  # O'zingiz istagan parolni generatsiya qiling
+            original_username = username.replace('.', '') if '.' in username else username
+            password = "P@ssw0rd123"  # O'zingiz istagan parolni generatsiya qiling
             writer.writerow([original_username, username, email, password])
 
 def main():
