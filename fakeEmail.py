@@ -26,7 +26,7 @@ def generate_gmail_variants(email):
             new_username = list(username)
             for pos in combination:
                 new_username.insert(pos, '.')
-            variants.add(("".join(new_username) + "@" + domain)
+            variants.add(normalize_dots("".join(new_username) + "@" + domain)
     
     return list(variants)
 
