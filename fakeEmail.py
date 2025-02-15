@@ -14,8 +14,6 @@ def generate_gmail_variants(email):
     if domain.lower() != 'gmail.com':
         raise ValueError("Only Gmail addresses are supported.")
     
-    positions = list(range(1, len(username)))  # Possible positions to insert '.'
-    
     variants = set()
     for i in range(1, len(username)):
         if username[i - 1] != '.' and username[i] != '.':  # '.' ketma-ket kelmasligi uchun
