@@ -3,6 +3,12 @@ import csv
 import random
 import string
 
+def generate_ai_string(length=8):
+    if length < 3:
+        raise ValueError("Uzunlik kamida 3 bo'lishi kerak.")
+    
+    suffix = ''.join(random.choices(string.ascii_lowercase + string.digits, k=length - 2))
+    return "ai" + suffix
 def generate_gmail_variants(email):
     username, domain = email.split('@')
     if domain.lower() != 'gmail.com':
