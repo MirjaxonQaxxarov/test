@@ -1,0 +1,2 @@
+# The `.gitignore` file content looks correct. The entry `*.csv` will ignore all CSV files in your repository. You don't need to modify anything as the current content already achieves what you want - ignoring all files with the .csv extension.
+*.csv
