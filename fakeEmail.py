@@ -4,8 +4,8 @@ import random
 import string
 
 def generate_ai_string(length=8):
-    if length < 3:
-        raise ValueError("Uzunlik kamida 3 bo'lishi kerak.")
+    if length < 4:
+        raise ValueError("Uzunlik kamida 4 bo'lishi kerak.")
     
     suffix = ''.join(random.choices(string.ascii_lowercase + string.digits, k=length - 2))
     return "ai" + suffix
