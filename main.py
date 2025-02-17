@@ -1,9 +1,9 @@
 import os
 import time
 
-REPO_PATH = r"D:\dasturlash\python\tests"  # Loyihangiz joylashgan papka
+REPO_PATH = r"D:\python\test\test"  # Loyihangiz joylashgan papka
 COMMIT_MESSAGE = "Auto commit"  # Har bir commit uchun xabar
-PUSH_COUNT = 10  # Necha marta push qilmoqchisiz?
+PUSH_COUNT = 100  # Necha marta push qilmoqchisiz?
 
 os.chdir(REPO_PATH)
 
