@@ -1,0 +1,444 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="author" content="Codescandy">
+
+<!-- Favicon icon-->
+<link rel="shortcut icon" type="image/x-icon" href="../assets/images/favicon/favicon.ico">
+
+<!-- darkmode js -->
+<script src="../assets/js/vendors/darkMode.js"></script>
+
+<!-- Libs CSS -->
+<link href="../assets/fonts/feather/feather.css" rel="stylesheet">
+<link href="../assets/libs/bootstrap-icons/font/bootstrap-icons.min.css" rel="stylesheet">
+<link href="../assets/libs/simplebar/dist/simplebar.min.css" rel="stylesheet">
+
+<!-- Theme CSS -->
+<link rel="stylesheet" href="../assets/css/theme.min.css">
+
+  <link rel="canonical" href="dropzone.html">
+  <link href="../assets/libs/prismjs/themes/prism-okaidia.min.css" rel="stylesheet">
+  <link href="../assets/libs/dropzone/dist/dropzone.css" rel="stylesheet">
+  <title>Dropzone js | Geeks - Bootstrap 5 Template </title>
+
+</head>
+
+<body class="bg-white">
+
+  <!-- Main wrapper -->
+  <div class="docs-main-wrapper">
+    <div class="docs-header">
+    <nav class="navbar navbar-expand-md fixed-top ms-0">
+        <a class="navbar-brand" href="../index.html"><img src="../assets/images/brand/logo/logo.svg" alt="Geeks"></a>
+        <div class="ms-auto d-flex align-items-center">
+            <div class="dropdown">
+                <button class="btn btn-light btn-icon rounded-circle d-flex align-items-center" type="button" aria-expanded="false" data-bs-toggle="dropdown" aria-label="Toggle theme (auto)">
+                    <i class="bi theme-icon-active"></i>
+                    <span class="visually-hidden bs-theme-text">Toggle theme</span>
+                </button>
+                <ul class="dropdown-menu dropdown-menu-end shadow" aria-labelledby="bs-theme-text">
+                    <li>
+                        <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="light" aria-pressed="false">
+                            <i class="bi theme-icon bi-sun-fill"></i>
+                            <span class="ms-2">Light</span>
+                        </button>
+                    </li>
+                    <li>
+                        <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="dark" aria-pressed="false">
+                            <i class="bi theme-icon bi-moon-stars-fill"></i>
+                            <span class="ms-2">Dark</span>
+                        </button>
+                    </li>
+                    <li>
+                        <button type="button" class="dropdown-item d-flex align-items-center active" data-bs-theme-value="auto" aria-pressed="true">
+                            <i class="bi theme-icon bi-circle-half"></i>
+                            <span class="ms-2">Auto</span>
+                        </button>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="d-flex">
+                <div class="me-2 me-lg-0 ms-2">
+                    <a class="btn btn-primary" href="https://bit.ly/geeksui">Buy now</a>
+                </div>
+                <div>
+                    <button class="btn btn-icon navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+</div>
+
+    <!-- Left sidebar -->
+    <!-- Nav Sidebar -->
+<aside class="docs-nav-sidebar">
+  <div class="py-5"></div>
+  <div class="docs-nav">
+    <nav class="navbar navbar-expand-md">
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav flex-column" id="sidebarnav">
+          <li class="navbar-header">
+            <h5 class="heading">Getting Started</h5>
+          </li>
+          <li class="nav-item"><a href="index.html" class="nav-link">Introduction</a></li>
+          <li class="nav-item"><a href="environment-setup.html" class="nav-link">Environment setup</a></li>
+          <li class="nav-item"><a href="working-with-gulp.html" class="nav-link">Working with Gulp</a></li>
+          <li class="nav-item"><a href="npm-scripts.html" class="nav-link">Npm Commands</a></li>
+          <li class="nav-item"><a href="compiled-files.html" class="nav-link">Compiled Files</a></li>
+          <li class="nav-item"><a href="file-structure.html" class="nav-link">File Structure</a></li>
+          <li class="nav-item"><a href="resources-assets.html" class="nav-link">Resources & assets</a></li>
+          <li class="nav-item"><a href="changelog.html" class="nav-link">Changelog</a></li>
+
+          <li>
+            <div class="navbar-border"></div>
+          </li>
+          <li class="navbar-header mt-0">
+            <h5 class="heading">Foundation</h5>
+          </li>
+          <li class="nav-item"><a href="typography.html" class="nav-link">Typography</a></li>
+          <li class="nav-item"><a href="colors.html" class="nav-link">Colors</a></li>
+          <li class="nav-item"><a href="shadows.html" class="nav-link">Shadows</a></li>
+
+          <li>
+            <div class="navbar-border"></div>
+          </li>
+
+          <li class="navbar-header mt-0">
+            <h5 class="heading">Snippet</h5>
+          </li>
+          <li class="nav-item">
+            <a href="bootstrap-5-snippets.html" class="nav-link">Introduction</a>
+          </li>
+          <li class="nav-item">
+            <a href="accordions-snippet.html" class="nav-link">Accordions</a>
+          </li>
+          <li class="nav-item">
+            <a href="card-snippet.html" class="nav-link">Card</a>
+          </li>
+          <li class="nav-item">
+            <a href="chart.html" class="nav-link">Chart</a>
+          </li>
+          <li class="nav-item">
+            <a href="client-snippet.html" class="nav-link">Clients</a>
+          </li>
+          <li class="nav-item">
+            <a href="cta-snippet.html" class="nav-link">CTA</a>
+          </li>
+          <li class="nav-item">
+            <a href="features-snippet.html" class="nav-link">Features</a>
+          </li>
+          <li class="nav-item">
+            <a href="footer-snippet.html" class="nav-link">Footer</a>
+          </li>
+          <li class="nav-item">
+            <a href="header-snippet.html" class="nav-link">Headers</a>
+          </li>
+          <li class="nav-item">
+            <a href="hero-snippet.html" class="nav-link">Hero</a>
+          </li>
+          <li class="nav-item">
+            <a href="image-snippet.html" class="nav-link">Image</a>
+          </li>
+          <li class="nav-item">
+            <a href="integration-snippet.html" class="nav-link">Integrations</a>
+          </li>
+          <li class="nav-item">
+            <a href="pricing.html" class="nav-link">Pricing</a>
+          </li>
+          <li class="nav-item">
+            <a href="reviews.html" class="nav-link">Reviews</a>
+          </li>
+          <li class="nav-item">
+            <a href="slider-snippet.html" class="nav-link">Slider</a>
+          </li>
+          <li class="nav-item">
+            <a href="stats.html" class="nav-link">Stats</a>
+          </li>
+          <li class="nav-item">
+            <a href="tables-snippet.html" class="nav-link">Tables</a>
+          </li>
+          <li class="nav-item">
+            <a href="team-snippet.html" class="nav-link">Team</a>
+          </li>
+          <li class="nav-item">
+            <a href="testimonials-snippet.html" class="nav-link">Testimonials</a>
+          </li>
+          <li class="nav-item">
+            <a href="user-profile.html" class="nav-link">User Profile</a>
+          </li>
+          <li>
+            <div class="navbar-border"></div>
+          </li>
+          <li class="navbar-header mt-0">
+            <h5 class="heading">Components</h5>
+          </li>
+          <li class="nav-item">
+            <a href="accordions.html" class="nav-link">Accordions</a>
+          </li>
+          <li class="nav-item">
+            <a href="alerts.html" class="nav-link">Alerts</a>
+          </li>
+          <li class="nav-item">
+            <a href="avatar.html" class="nav-link">Avatar</a>
+          </li>
+          <li class="nav-item">
+            <a href="badge.html" class="nav-link">Badge</a>
+          </li>
+
+          <li class="nav-item">
+            <a href="breadcrumb.html" class="nav-link">Breadcrumb</a>
+          </li>
+          <li class="nav-item">
+            <a href="buttons.html" class="nav-link">Buttons</a>
+          </li>
+          <li class="nav-item">
+            <a href="button-group.html" class="nav-link">Button group</a>
+          </li>
+          <li class="nav-item">
+            <a href="card.html" class="nav-link">Card</a>
+          </li>
+          <li class="nav-item">
+            <a href="carousel.html" class="nav-link">Carousel</a>
+          </li>
+          <li class="nav-item">
+            <a href="close-button.html" class="nav-link">Close Button</a>
+          </li>
+          <li class="nav-item">
+            <a href="collapse.html" class="nav-link">Collapse</a>
+          </li>
+          <li class="nav-item">
+            <a href="dropdowns.html" class="nav-link">Dropdowns</a>
+          </li>
+          <li class="nav-item">
+            <a href="images.html" class="nav-link">Images</a>
+          </li>
+          <li class="nav-item">
+            <a href="list-group.html" class="nav-link">List group</a>
+          </li>
+
+          <li class="nav-item">
+            <a href="modal.html" class="nav-link">Modal</a>
+          </li>
+          <li class="nav-item">
+            <a href="navs-tabs.html" class="nav-link">Navs and tabs</a>
+          </li>
+          <li class="nav-item">
+            <a href="navbar.html" class="nav-link">Navbar</a>
+          </li>
+          <li class="nav-item">
+            <a href="offcanvas.html" class="nav-link">Offcanvas</a>
+          </li>
+          <li class="nav-item">
+            <a href="pagination.html" class="nav-link">Pagination</a>
+          </li>
+          <li class="nav-item">
+            <a href="placeholders.html" class="nav-link">Placeholders</a>
+          </li>
+          <li class="nav-item">
+            <a href="popovers.html" class="nav-link">Popovers</a>
+          </li>
+          <li class="nav-item">
+            <a href="progress.html" class="nav-link">Progress</a>
+          </li>
+          <li class="nav-item">
+            <a href="scrollspy.html" class="nav-link">Scrollspy</a>
+          </li>
+          <li class="nav-item">
+            <a href="spinners.html" class="nav-link">Spinners</a>
+          </li>
+          <li class="nav-item">
+            <a href="tables.html" class="nav-link">Tables</a>
+          </li>
+          <li class="nav-item">
+            <a href="toasts.html" class="nav-link">Toasts</a>
+          </li>
+          <li class="nav-item">
+            <a href="tooltips.html" class="nav-link">Tooltips</a>
+          </li>
+          <li>
+            <div class="navbar-border"></div>
+          </li>
+          <li class="navbar-header mt-0">
+            <h5 class="heading">Forms</h5>
+          </li>
+          <li class="nav-item">
+            <a href="forms.html" class="nav-link">Basic Forms</a>
+          </li>
+          <li class="nav-item">
+            <a href="advance-forms.html" class="nav-link">Advance Forms</a>
+          </li>
+
+          <li class="nav-item">
+            <a href="dropzone.html" class="nav-link">Dropzone</a>
+          </li>
+          <li class="nav-item">
+            <a href="flatpickr.html" class="nav-link">Datepicker</a>
+          </li>
+          <li class="nav-item">
+            <a href="input-group.html" class="nav-link">Input Group</a>
+          </li>
+          <li class="nav-item">
+            <a href="inputmask.html" class="nav-link">Imask</a>
+          </li>
+          <li class="nav-item">
+            <a href="quill-editor.html" class="nav-link">Quill Editor</a>
+          </li>
+          <li class="nav-item">
+            <a href="tagify.html" class="nav-link">Tagify</a>
+          </li>
+
+          <li>
+            <div class="navbar-border"></div>
+          </li>
+          <li class="navbar-header mt-0">
+            <h5 class="heading">Utilities</h5>
+          </li>
+          <li class="nav-item"><a href="background.html" class="nav-link">Background</a></li>
+          <li class="nav-item"><a href="borders.html" class="nav-link">Borders</a></li>
+          <li class="nav-item"><a href="colored-links.html" class="nav-link">Colored Links</a></li>
+          <li class="nav-item"><a href="opacity.html" class="nav-link">Opacity</a></li>
+          <li class="nav-item"><a href="ratio.html" class="nav-link">Ratio</a></li>
+          <li class="nav-item"><a href="stacks.html" class="nav-link">Stacks</a></li>
+          <li class="nav-item"><a href="text-color.html" class="nav-link">Colors</a></li>
+          <li class="nav-item"><a href="text.html" class="nav-link">Text</a></li>
+          <li class="nav-item"><a href="text-truncation.html" class="nav-link">Text truncation</a></li>
+          <li class="nav-item"><a href="vertical-rule.html" class="nav-link">Vertical rule</a></li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+  <div class="nav-footer">
+    <p class="mb-0">
+      Developed by
+      <a href="https://codescandy.com" target="_blank">Codescandy</a>
+    </p>
+  </div>
+</aside>
+
+    <!-- Wrapper  -->
+    <main class="docs-wrapper">
+      <section class="container-fluid">
+        <div class="row">
+          <div class="offset-xxl-2 col-xxl-6 offset-xl-1 col-xl-7 col-md-12 col-sm-12 col-12">
+            <!-- Content -->
+            <div class="docs-content mx-xxl-9">
+              <div class="row">
+                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                  <div class="mb-6" id="intro">
+                    <h1 class="mb-2 display-3 fw-bold">Dropzone</h1>
+                    <p class="lead ">Drag and drop file uploads with image previews powered by Dropzone.js.
+                      You
+                      can pass any options supported by the plugin via the data-options attribute. The value must be a
+                      valid JSON object.
+                    </p>
+                    <a href="https://www.dropzonejs.com/" target="_blank">Dropzone
+                      Documentation <i class="fe fe-external-link"></i></a>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                  <div class="mb-4" id="usage">
+                    <h2 class="mb-4 fw-semibold">Usage</h2>
+                    <h3 class="fw-semibold mb-1">CSS</h3>
+                    <p>Copy-paste the stylesheet <code>&lt;link&gt;</code> into your
+                      <code>&lt;head&gt;</code> to load the CSS.</p>
+                    <div class=" mb-6">
+
+                       <pre class="h-auto"><code class="language-markup"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>link</span> <span class="token attr-name">rel</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>stylesheet<span class="token punctuation">"</span></span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>../assets/css/theme.min.css<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span></code></pre>
+
+                    </div>
+                    <h3 class="fw-semibold mb-1">Js</h3>
+                    <p>Copy-paste the following <code>&lt;script&gt;</code> and
+                      <code>Function</code> near the end of your pages.</p>
+                    <!-- Card -->
+                    <div>
+
+                       <pre class="h-auto"><code class="language-markup"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>../node_modules/dropzone/dist/min/dropzone.min.js<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">&gt;</span></span></code></pre>
+
+                    </div>
+                    <!-- Card -->
+                    <div class=" mt-2">
+
+                       <pre class="h-auto"><code class="language-markup"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>../assets/js/vendors/dropzone.js<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">&gt;</span></span></code></pre>
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row mt-5">
+                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                  <div class="mb-4" id="basic">
+                    <h2 class="mb-0 fw-semibold">Basic examples</h2>
+                  </div>
+                  <!-- Card -->
+                  <div class="mb-8">
+                    <ul class="nav nav-line-bottom " id="pills-tab-choiceSelect" role="tablist">
+                      <li class="nav-item">
+                        <a class="nav-link active" id="pills-choiceSelect-design-tab" data-bs-toggle="pill" href="#pills-choiceSelect-design" role="tab" aria-controls="pills-choiceSelect-design" aria-selected="true">Design</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" id="pills-choiceSelect-html-tab" data-bs-toggle="pill" href="#pills-choiceSelect-html" role="tab" aria-controls="pills-choiceSelect-html" aria-selected="false">HTML</a>
+                      </li>
+                    </ul>
+                    <!-- Tab content -->
+                    <div class="tab-content" id="pills-tabContent-choiceSelect">
+                      <div class="tab-pane tab-example-design fade show active" id="pills-choiceSelect-design" role="tabpanel" aria-labelledby="pills-choiceSelect-design-tab">
+                        <div id="my-dropzone" class="dropzone mt-4 border-dashed rounded-2 min-h-0"></div>
+                      </div>
+                      <div class="tab-pane tab-example-html fade " id="pills-choiceSelect-html" role="tabpanel" aria-labelledby="pills-choiceSelect-html-tab">
+                        <pre class="language-markup" tabindex="0"><code class="language-markup"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>my-dropzone<span class="token punctuation">"</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>dropzone mt-4 border-dashed rounded-2 min-h-0<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span></code></pre>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+      <div class="col-xl-2 col-lg-2 col-md-6 col-sm-12 col-12 d-none d-xl-block position-fixed end-0">
+        <div class="sidebar-nav-fixed">
+              <span class="px-4 mb-2 d-block text-uppercase ls-md fw-semibold fs-6">Contents</span>
+          <!-- Sidebar nav fixed -->
+          <ul class="list-unstyled">
+            <li><a href="#intro" class="active">Introduction</a></li>
+            <li><a href="#usage">How to Use</a></li>
+            <li><a href="#basic">Basic</a></li>
+          </ul>
+        </div>
+     </div></div></section>
+    </main>
+  </div>
+ <!-- Scroll top -->
+ <div class="btn-scroll-top">
+    <svg class="progress-square svg-content" width="100%" height="100%" viewbox="0 0 40 40">
+        <path d="M8 1H32C35.866 1 39 4.13401 39 8V32C39 35.866 35.866 39 32 39H8C4.13401 39 1 35.866 1 32V8C1 4.13401 4.13401 1 8 1Z"></path>
+    </svg>
+</div>
+
+  <!-- Scripts --> <!-- Libs JS -->
+<script src="../assets/libs/%40popperjs/core/dist/umd/popper.min.js"></script>
+<script src="../assets/libs/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="../assets/libs/simplebar/dist/simplebar.min.js"></script>
+
+<!-- Theme JS -->
+<script src="../assets/js/theme.min.js"></script>
+
+  <script src="../assets/js/vendors/sidebarMenu.js"></script>
+<script src="../assets/libs/prismjs/prism.js"></script>
+<script src="../assets/libs/prismjs/components/prism-scss.min.js"></script>
+<script src="../assets/libs/prismjs/plugins/toolbar/prism-toolbar.min.js"></script>
+<script src="../assets/libs/prismjs/plugins/copy-to-clipboard/prism-copy-to-clipboard.min.js"></script>
+<script src="../assets/libs/dropzone/dist/min/dropzone.min.js"></script>
+<script src="../assets/js/vendors/dropzone.js"></script>
+</body>
+
+</html>

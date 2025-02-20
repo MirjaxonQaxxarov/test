@@ -1,0 +1,859 @@
+﻿<!doctype html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="../../assets/libs/bs-stepper/dist/css/bs-stepper.min.css">
+    <link rel="stylesheet" href="../../assets/libs/flatpickr/dist/flatpickr.min.css">
+    <!-- Required meta tags -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="author" content="Codescandy">
+
+<!-- Favicon icon-->
+<link rel="shortcut icon" type="image/x-icon" href="../../assets/images/favicon/favicon.ico">
+
+<!-- darkmode js -->
+<script src="../../assets/js/vendors/darkMode.js"></script>
+
+<!-- Libs CSS -->
+<link href="../../assets/fonts/feather/feather.css" rel="stylesheet">
+<link href="../../assets/libs/bootstrap-icons/font/bootstrap-icons.min.css" rel="stylesheet">
+<link href="../../assets/libs/simplebar/dist/simplebar.min.css" rel="stylesheet">
+
+<!-- Theme CSS -->
+<link rel="stylesheet" href="../../assets/css/theme.min.css">
+
+    <link rel="canonical" href="upload-resume.html">
+    <title>Upload Resume | Geeks - Bootstrap 5 Template</title>
+  </head>
+
+  <body class="bg-white">
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg">
+    <div class="container px-0">
+        <a class="navbar-brand" href="../../index.html"><img src="../../assets/images/brand/logo/logo.svg" alt="Geeks"></a>
+        <div class="d-flex align-items-center order-lg-3 ms-lg-3">
+            <div class="d-flex align-items-center">
+                <div class="dropdown">
+                    <button class="btn btn-light btn-icon rounded-circle d-flex align-items-center" type="button" aria-expanded="false" data-bs-toggle="dropdown" aria-label="Toggle theme (auto)">
+                        <i class="bi theme-icon-active"></i>
+                        <span class="visually-hidden bs-theme-text">Toggle theme</span>
+                    </button>
+                    <ul class="dropdown-menu dropdown-menu-end shadow" aria-labelledby="bs-theme-text">
+                        <li>
+                            <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="light" aria-pressed="false">
+                                <i class="bi theme-icon bi-sun-fill"></i>
+                                <span class="ms-2">Light</span>
+                            </button>
+                        </li>
+                        <li>
+                            <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="dark" aria-pressed="false">
+                                <i class="bi theme-icon bi-moon-stars-fill"></i>
+                                <span class="ms-2">Dark</span>
+                            </button>
+                        </li>
+                        <li>
+                            <button type="button" class="dropdown-item d-flex align-items-center active" data-bs-theme-value="auto" aria-pressed="true">
+                                <i class="bi theme-icon bi-circle-half"></i>
+                                <span class="ms-2">Auto</span>
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+
+                <a href="https://themes.getbootstrap.com/product/geeks-academy-admin-template/" class="btn btn-outline-primary mx-2 d-none d-md-block">Sign in</a>
+                <a href="https://themes.getbootstrap.com/product/geeks-academy-admin-template/" class="btn btn-primary d-none d-md-block">Sign up</a>
+            </div>
+            <button class="navbar-toggler collapsed ms-2 ms-lg-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-default" aria-controls="navbar-default" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="icon-bar top-bar mt-0"></span>
+                <span class="icon-bar middle-bar"></span>
+                <span class="icon-bar bottom-bar"></span>
+            </button>
+        </div>
+        <!-- Button -->
+
+        <!-- Collapse -->
+        <div class="collapse navbar-collapse" id="navbar-default">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="../landings/landing-job.html">Home</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarListing" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Listing</a>
+                    <ul class="dropdown-menu dropdown-menu-arrow" aria-labelledby="navbarListing">
+                        <li>
+                            <a class="dropdown-item" href="job-listing.html">List</a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="job-grid.html">Grid</a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="job-single.html">Single</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarPages" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Pages</a>
+                    <ul class="dropdown-menu dropdown-menu-arrow dropdown-menu-end" aria-labelledby="navbarPages">
+                        <li>
+                            <a class="dropdown-item" href="company-list.html">Company List</a>
+                        </li>
+                        <li class="dropdown-submenu dropend">
+                            <a class="dropdown-item dropdown-list-group-item dropdown-toggle" href="#">Company Single</a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a class="dropdown-item" href="company-about.html">About</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="company-reviews.html">Reviews</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="company-jobs.html">Jobs</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="company-benefits.html">Benifits</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="company-photos.html">Photos</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="post-job.html">Post A Job</a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="upload-resume.html">Upload Resume</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../../index.html">Back to Demo</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <i class="fe fe-more-horizontal"></i>
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-md dropdown-menu-end" aria-labelledby="navbarDropdown">
+                        <div class="list-group">
+                            <a class="list-group-item list-group-item-action border-0" href="../../docs/index.html">
+                                <div class="d-flex align-items-center">
+                                    <i class="fe fe-file-text fs-3 text-primary"></i>
+                                    <div class="ms-3">
+                                        <h5 class="mb-0">Documentations</h5>
+                                        <p class="mb-0 fs-6">Browse the all documentation</p>
+                                    </div>
+                                </div>
+                            </a>
+                            <a class="list-group-item list-group-item-action border-0" href="../../docs/bootstrap-5-snippets.html">
+                                <div class="d-flex align-items-center">
+                                    <i class="bi bi-files fs-3 text-primary"></i>
+                                    <div class="ms-3">
+                                        <h5 class="mb-0">Snippet</h5>
+                                        <p class="mb-0 fs-6">Bunch of Snippet</p>
+                                    </div>
+                                </div>
+                            </a>
+                            <a class="list-group-item list-group-item-action border-0" href="../../docs/changelog.html">
+                                <div class="d-flex align-items-center">
+                                    <i class="fe fe-layers fs-3 text-primary"></i>
+                                    <div class="ms-3">
+                                        <h5 class="mb-0">
+                                            Changelog
+                                            <span class="text-primary ms-1" id="changelog"></span>
+                                        </h5>
+                                        <p class="mb-0 fs-6">See what's new</p>
+                                    </div>
+                                </div>
+                            </a>
+                            <a class="list-group-item list-group-item-action border-0" href="../../../geeks-rtl/index.htm" target="_blank">
+                                <div class="d-flex align-items-center">
+                                    <i class="fe fe-toggle-right fs-3 text-primary"></i>
+                                    <div class="ms-3">
+                                        <h5 class="mb-0">RTL demo</h5>
+                                        <p class="mb-0 fs-6">RTL Pages</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+    <!-- Page header-->
+    <main>
+      <section class="py-6 py-lg-8">
+        <div class="container my-lg-5">
+          <div class="row">
+            <div class="offset-lg-1 col-lg-7 col-12">
+              <!-- Content -->
+              <div class="mb-8">
+                <!-- heading -->
+                <h1 class="mb-3 display-4 fw-bold">Find a Job & grow your career</h1>
+                <!-- lead -->
+                <p class="mb-0 lead pe-lg-8">Build your profile and let recruiters find you. Get job postings delivered right to your email.</p>
+              </div>
+            </div>
+          </div>
+          <!-- row -->
+          <div class="row">
+            <div class="offset-lg-1 col-lg-10 col-12">
+              <div class="row">
+                <div class="col-md-8 col-12">
+                  <div id="stepperForm" class="bs-stepper">
+                    <!-- row -->
+                    <div class="row">
+                      <div>
+                        <!-- Stepper Button -->
+                        <div class="bs-stepper-header bg-transparent d-flex justify-content-between px-0" role="tablist">
+                          <div class="step" data-target="#test-l-1">
+                            <!-- button -->
+                            <button type="button" class="step-trigger d-block" role="tab" id="courseFormtrigger1" aria-controls="test-l-1">
+                              <div class="bs-stepper-circle d-block step-line">1</div>
+                              <div class="bs-stepper-label">Basic Details</div>
+                            </button>
+                          </div>
+                          <!-- button -->
+                          <div class="step" data-target="#test-l-2">
+                            <button type="button" class="step-trigger d-block" role="tab" id="courseFormtrigger2" aria-controls="test-l-2">
+                              <span class="bs-stepper-circle d-block step-line">2</span>
+                              <span class="bs-stepper-label">Employment</span>
+                            </button>
+                          </div>
+                          <!-- button -->
+                          <div class="step" data-target="#test-l-3">
+                            <button type="button" class="step-trigger d-block" role="tab" id="courseFormtrigger3" aria-controls="test-l-3">
+                              <span class="bs-stepper-circle d-block step-line">3</span>
+                              <span class="bs-stepper-label">Education</span>
+                            </button>
+                          </div>
+                          <!-- button -->
+                          <div class="step" data-target="#test-l-4">
+                            <button type="button" class="step-trigger d-block" role="tab" id="courseFormtrigger4" aria-controls="test-l-4">
+                              <span class="bs-stepper-circle d-block">4</span>
+                              <span class="bs-stepper-label">Job</span>
+                            </button>
+                          </div>
+                        </div>
+                        <!-- Stepper content -->
+
+                        <div class="bs-stepper-content mt-5">
+                          <form onsubmit="return false">
+                            <!-- Content one -->
+                            <div id="test-l-1" role="tabpanel" class="bs-stepper-pane fade" aria-labelledby="courseFormtrigger1">
+                              <!-- Card -->
+                              <div class="card card-bordered shadow-none mb-3">
+                                <!-- Card body -->
+                                <div class="card-body p-6">
+                                  <div class="mb-4">
+                                    <h2 class="mb-0">Basic Information</h2>
+                                    <span>Add your personal details in the form.</span>
+                                  </div>
+                                  <!-- row -->
+
+                                  <div class="row gx-3">
+                                    <div class="mb-4 col-12 col-md-6">
+                                      <!-- label -->
+
+                                      <label class="form-label" for="fname">
+                                        First Name
+                                        <span class="text-danger">*</span>
+                                      </label>
+                                      <!-- input -->
+                                      <input type="text" id="fname" class="form-control" placeholder="First Name">
+                                    </div>
+                                    <div class="mb-4 col-12 col-md-6">
+                                      <!-- label -->
+                                      <label class="form-label" for="lname">
+                                        Last Name
+                                        <span class="text-danger">*</span>
+                                      </label>
+                                      <!-- input -->
+                                      <input type="text" id="lname" class="form-control" placeholder="Last Name">
+                                    </div>
+                                    <div class="mb-4 col-12 col-md-12">
+                                      <!-- label -->
+                                      <label class="form-label" for="email">
+                                        Email
+                                        <span class="text-danger">*</span>
+                                      </label>
+                                      <!-- input -->
+                                      <input type="email" id="email" class="form-control" placeholder="Tell us your Email ID">
+                                      <!-- label -->
+                                      <span class="fs-6">We'll send you relevant jobs in your mail</span>
+                                    </div>
+                                    <div class="mb-4 col-12 col-md-12">
+                                      <!-- label -->
+                                      <label class="form-label" for="phone">
+                                        Phone
+                                        <span class="text-danger">*</span>
+                                      </label>
+                                      <!-- input group -->
+                                      <div class="input-group mb-1">
+                                        <span class="input-group-text">+91</span>
+                                        <!-- input -->
+                                        <input type="text" class="form-control" placeholder="Mobile Number" aria-label="Mobile Number" aria-describedby="phone" id="phone">
+                                      </div>
+                                      <!-- text -->
+                                      <span class="fs-6">Recruiters will call you on this number</span>
+                                    </div>
+
+                                    <div class="mb-4 col-12 col-md-12">
+                                      <!-- text -->
+
+                                      <div class="fs-5 text-dark mb-2">Gender</div>
+                                      <!-- radio -->
+                                      <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="male" value="option1">
+                                        <label class="form-check-label" for="male">Male</label>
+                                      </div>
+                                      <!-- radio -->
+                                      <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="female" value="option2">
+                                        <label class="form-check-label" for="female">Female</label>
+                                      </div>
+                                    </div>
+
+                                    <div class="mb-4 col-12 col-md-12">
+                                      <!-- radio -->
+                                      <label class="form-label" for="resume">Resume</label>
+                                      <div class="input-group mb-1">
+                                        <input type="file" class="form-control" id="resume">
+                                        <label class="input-group-text" for="resume">Upload</label>
+                                      </div>
+                                      <!-- text -->
+                                      <span class="fs-6">DOC, DOCx, PDF, RTF | Max: 2 MB. Recruiters give first preference to candidates who have a resume</span>
+                                    </div>
+                                    <div class="mb-4 col-12 col-md-12">
+                                      <!-- chechbox -->
+                                      <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="formId">
+                                        <label class="form-check-label fs-6" for="formId">Send me important updates on email id.</label>
+                                      </div>
+                                    </div>
+
+                                    <div class="col-12">
+                                      <!-- Button -->
+                                      <button class="btn btn-primary" onclick="stepperForm.next()">Next</button>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+
+                            <!-- Content two -->
+                            <div id="test-l-2" role="tabpanel" class="bs-stepper-pane fade" aria-labelledby="courseFormtrigger2">
+                              <!-- Card -->
+                              <div class="card card-bordered shadow-none mb-3">
+                                <!-- Card body -->
+                                <div class="card-body p-6">
+                                  <div class="mb-4">
+                                    <h2 class="mb-0">Employment</h2>
+                                    <span>Add your Employment details like company, job title and salary.</span>
+                                  </div>
+                                  <!-- row -->
+                                  <div class="row gx-3">
+                                    <!-- col -->
+                                    <div class="mb-3 col-12">
+                                      <label class="form-label" for="jobTitle">
+                                        Job title
+                                        <span class="text-danger">*</span>
+                                      </label>
+                                      <input type="text" id="jobTitle" class="form-control" placeholder="Write the Job Title">
+                                    </div>
+                                    <!-- col -->
+                                    <div class="mb-3 col-12 col-md-12">
+                                      <!-- text -->
+                                      <div class="mb-2 text-dark">
+                                        Job type
+                                        <span class="text-danger">*</span>
+                                      </div>
+                                      <!-- btn group -->
+                                      <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
+                                        <!-- radio -->
+                                        <input type="radio" class="btn-check" name="btnradio" id="FullTime" autocomplete="off" checked="">
+                                        <!-- label -->
+                                        <label class="btn btn-outline-primary" for="FullTime">Full Time</label>
+                                        <!-- radio -->
+                                        <input type="radio" class="btn-check" name="btnradio" id="freelance" autocomplete="off">
+
+                                        <!-- label -->
+                                        <label class="btn btn-outline-primary" for="freelance">Freelance</label>
+                                        <!-- input -->
+                                        <input type="radio" class="btn-check" name="btnradio" id="contract" autocomplete="off">
+
+                                        <!-- label -->
+                                        <label class="btn btn-outline-primary" for="contract">Contract</label>
+                                      </div>
+                                    </div>
+
+                                    <div class="mb-3 col-12 col-md-12">
+                                      <!-- label -->
+                                      <label class="form-label" for="companyName">Company Name</label>
+                                      <!-- input -->
+                                      <input type="text" class="form-control" placeholder="Company Name" id="companyName">
+                                    </div>
+                                    <div class="mb-3 col-12 col-md-12">
+                                      <!-- label -->
+                                      <label class="form-label" for="companyAddress">Company Address</label>
+                                      <!-- input -->
+                                      <input type="text" class="form-control" placeholder="Company Address" id="companyAddress">
+                                    </div>
+                                    <div class="mb-3 col-12 col-md-12">
+                                      <!-- label -->
+                                      <label class="form-label" for="companyCity">Company City</label>
+                                      <!-- input -->
+                                      <input type="text" class="form-control" placeholder="City" id="companyCity">
+                                    </div>
+                                    <div class="mb-3 col-12 col-md-6">
+                                      <!-- label -->
+                                      <label class="form-label" for="CompanyState">Company State</label>
+                                      <!-- select menu -->
+                                      <select class="form-select" data-choices="" id="CompanyState">
+                                        <option selected="">State</option>
+                                        <option value="Gujarat">Gujarat</option>
+                                        <option value="Maharashtra">Maharashtra</option>
+                                        <option value="MP">MP</option>
+                                      </select>
+                                    </div>
+                                    <div class="mb-3 col-12 col-md-6">
+                                      <!-- label -->
+                                      <label class="form-label" for="PinCode">Pin code</label>
+                                      <!-- input -->
+                                      <input type="text" id="PinCode" class="form-control" placeholder="Pin code">
+                                    </div>
+
+                                    <div class="mb-3 col-12 col-md-6">
+                                      <!-- label -->
+                                      <label class="form-label" for="dateofjoining">Date of Joining</label>
+                                      <!-- input -->
+                                      <input type="text" class="form-control flatpickr" placeholder="Date" id="dateofjoining">
+                                    </div>
+                                    <div class="mb-3 col-12 col-md-6">
+                                      <!-- label -->
+                                      <label class="form-label" for="dateofrelive">Date of relieving</label>
+                                      <!-- input -->
+                                      <input type="text" class="form-control flatpickr" placeholder="Date" id="dateofrelive">
+                                    </div>
+                                    <div class="mb-3 col-12 col-md-12">
+                                      <!-- label -->
+                                      <label class="form-label" for="annualSalary">Annual Salary</label>
+                                      <!-- input -->
+                                      <input type="text" class="form-control" placeholder="Eg. 5,64,000" id="annualSalary">
+                                    </div>
+
+                                    <div class="d-md-flex justify-content-between mb-3 col-12 col-md-12">
+                                      <!-- button -->
+                                      <button class="btn btn-outline-secondary" onclick="stepperForm.previous()">Go to Back</button>
+                                      <div class="mt-2 mt-md-0">
+                                        <!-- button -->
+                                        <button class="btn btn-outline-secondary me-2" onclick="stepperForm.next()">Skip</button>
+                                        <!-- button -->
+                                        <button class="btn btn-primary" onclick="stepperForm.next()">Save and Continue</button>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <!-- Button -->
+                            </div>
+                            <!-- Content three -->
+                            <div id="test-l-3" role="tabpanel" class="bs-stepper-pane fade" aria-labelledby="courseFormtrigger3">
+                              <!-- Card -->
+                              <div class="card card-bordered shadow-none mb-3">
+                                <!-- Card body -->
+                                <div class="card-body p-6">
+                                  <div class="mb-4">
+                                    <h2 class="mb-0">Education</h2>
+                                    <span>Add your education detail like school, degree and graduate.</span>
+                                  </div>
+                                  <!-- row -->
+                                  <div class="row gx-3">
+                                    <div class="mb-3 col-12">
+                                      <!-- label -->
+                                      <label class="form-label" for="school">
+                                        School / University
+                                        <span class="text-danger">*</span>
+                                      </label>
+                                      <!-- input -->
+                                      <input type="text" id="school" class="form-control" placeholder="Ex: Boston University">
+                                    </div>
+                                    <div class="mb-3 col-12 col-md-12">
+                                      <!-- label -->
+                                      <label class="form-label" for="Degree">Degree</label>
+                                      <!-- input -->
+                                      <input type="text" class="form-control" placeholder="Company Name" id="Degree">
+                                    </div>
+                                    <div class="mb-3 col-12 col-md-12">
+                                      <!-- label -->
+                                      <label class="form-label" for="study">Fiels of study</label>
+                                      <!-- input -->
+                                      <input type="text" class="form-control" placeholder="Ex. Business" id="study">
+                                    </div>
+                                    <div class="mb-3 col-12 col-md-12">
+                                      <!-- label -->
+                                      <div class="mb-2 text-dark">Course Type</div>
+                                      <!-- btn group -->
+                                      <div class="btn-group" role="group" aria-label="Basic
+                                    radio toggle button group">
+                                        <!-- input -->
+                                        <input type="radio" class="btn-check" name="btnradio" id="fullTime1" autocomplete="off">
+                                        <!-- label -->
+                                        <label class="btn btn-outline-primary" for="fullTime1">Full Time</label>
+                                        <!-- input -->
+                                        <input type="radio" class="btn-check" name="btnradio" id="partTime2" autocomplete="off" checked="">
+                                        <label class="btn btn-outline-primary" for="partTime2">Part Time</label>
+                                      </div>
+                                    </div>
+                                    <div class="col-12">
+                                      <!-- label -->
+                                      <label class="form-label">From</label>
+                                    </div>
+                                    <div class="mb-3 col-12 col-md-6">
+                                      <label for="Month" class="visually-hidden">Month</label>
+                                      <!-- select menu -->
+                                      <select class="form-select" data-choices="" id="Month">
+                                        <option selected="">Month</option>
+                                        <option value="January">January</option>
+                                        <option value="February">February</option>
+                                        <option value="March">March</option>
+                                        <option value="April">April</option>
+                                        <option value="June">June</option>
+                                        <option value="July">July</option>
+                                        <option value="August">August</option>
+                                        <option value="September">September</option>
+                                        <option value="October">October</option>
+                                        <option value="November">November</option>
+                                        <option value="December">December</option>
+                                      </select>
+                                    </div>
+                                    <div class="mb-3 col-12 col-md-6">
+                                      <label for="Year" class="visually-hidden">Year</label>
+                                      <!-- selct menu -->
+                                      <select class="form-select" data-choices="" id="Year">
+                                        <option selected="">Year</option>
+                                        <option value="2015">2015</option>
+                                        <option value="2016">2016</option>
+                                        <option value="2017">2017</option>
+                                        <option value="2018">2018</option>
+                                        <option value="2019">2019</option>
+                                        <option value="2020">2020</option>
+                                        <option value="2021">2021</option>
+                                        <option value="2022">2022</option>
+                                      </select>
+                                    </div>
+                                    <div class="col-12">
+                                      <!-- label -->
+                                      <label class="form-label">To</label>
+                                    </div>
+                                    <div class="mb-3 col-12 col-md-6">
+                                      <label for="ToMonth" class="visually-hidden">Month</label>
+                                      <!-- select menu -->
+                                      <select class="form-select" data-choices="" id="ToMonth">
+                                        <option selected="">Month</option>
+                                        <option value="January">January</option>
+                                        <option value="February">February</option>
+                                        <option value="March">March</option>
+                                        <option value="April">April</option>
+                                        <option value="June">June</option>
+                                        <option value="July">July</option>
+                                        <option value="August">August</option>
+                                        <option value="September">September</option>
+                                        <option value="October">October</option>
+                                        <option value="November">November</option>
+                                        <option value="December">December</option>
+                                      </select>
+                                    </div>
+                                    <div class="mb-3 col-12 col-md-6">
+                                      <label for="ToYear" class="visually-hidden">Month</label>
+                                      <!-- select menu -->
+                                      <select class="form-select" data-choices="" id="ToYear">
+                                        <option selected="">Year</option>
+                                        <option value="2015">2015</option>
+                                        <option value="2016">2016</option>
+                                        <option value="2017">2017</option>
+                                        <option value="2018">2018</option>
+                                        <option value="2019">2019</option>
+                                        <option value="2020">2020</option>
+                                        <option value="2021">2021</option>
+                                        <option value="2022">2022</option>
+                                      </select>
+                                    </div>
+
+                                    <div class="d-md-flex justify-content-between mb-3 col-12 col-md-12">
+                                      <!-- button -->
+                                      <button class="btn btn-outline-secondary mb-2 mb-md-0" onclick="stepperForm.previous()">Go to Back</button>
+
+                                      <!-- button -->
+                                      <button class="btn btn-primary" onclick="stepperForm.next()">Save and Continue</button>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <!-- Button -->
+                            </div>
+                            <!-- Content four -->
+                            <div id="test-l-4" role="tabpanel" class="bs-stepper-pane fade" aria-labelledby="courseFormtrigger4">
+                              <!-- Card -->
+                              <div class="card card-bordered shadow-none mb-3">
+                                <!-- Card body -->
+                                <div class="card-body p-6">
+                                  <div class="mb-4">
+                                    <!-- heading -->
+                                    <h2 class="mb-0">What kind of job are you looking for?</h2>
+                                    <!-- text -->
+                                    <span>Add the details for are you looking for future opportunity.</span>
+                                  </div>
+                                  <div class="row">
+                                    <div class="mb-3 col-12">
+                                      <!-- label -->
+                                      <label class="form-label" for="rsumeHeadline">Resume Headline</label>
+                                      <!-- input -->
+                                      <input type="text" id="rsumeHeadline" class="form-control" placeholder="Ex:Figma Designer">
+                                    </div>
+                                    <div class="mb-3 col-12 col-md-12">
+                                      <!-- label -->
+                                      <label class="form-label" for="JobType">Job Type</label>
+                                      <!-- select menu -->
+                                      <select class="form-select" data-choices="" id="JobType">
+                                        <option selected="">Permanent</option>
+                                        <option value="Ahmedabad">Contract</option>
+                                      </select>
+                                    </div>
+
+                                    <div class="mb-3 col-12 col-md-12">
+                                      <!-- title -->
+                                      <div class="mb-2 text-dark">Employment Type</div>
+                                      <!-- btn group -->
+                                      <div class="btn-group" role="group" aria-label="Basic
+                                        radio toggle button group">
+                                        <!-- radio -->
+                                        <input type="radio" class="btn-check" name="btnradio" id="fullTime2" autocomplete="off">
+                                        <label class="btn btn-outline-primary" for="fullTime2">Full Time</label>
+                                        <!-- radio -->
+                                        <input type="radio" class="btn-check" name="btnradio" id="partTime3" autocomplete="off" checked="">
+                                        <label class="btn btn-outline-primary" for="partTime3">Part Time</label>
+
+                                        <!-- radio -->
+                                        <input type="radio" class="btn-check" name="btnradio" id="contract2" autocomplete="off">
+                                        <label class="btn btn-outline-primary" for="contract2">Contract</label>
+                                      </div>
+                                    </div>
+
+                                    <div class="mb-3 col-12 col-md-12">
+                                      <!-- label -->
+                                      <label class="form-label" for="Location">Location</label>
+                                      <!-- select menu -->
+                                      <select class="form-select" data-choices="" id="Location">
+                                        <option selected="">Select</option>
+                                        <option value="Ahmedabad">Ahmedabad</option>
+                                        <option value="Bombay">Bombay</option>
+                                        <option value="Pune">Pune</option>
+                                        <option value="Kerala">Kerala</option>
+                                      </select>
+                                    </div>
+                                    <div class="mb-3 col-12 col-md-12">
+                                      <!-- label -->
+                                      <label class="form-label" for="AvailabilityToJoin">Availability to Join</label>
+                                      <!-- select menu -->
+                                      <select class="form-select" data-choices="" id="AvailabilityToJoin">
+                                        <option selected="">15 Days to less</option>
+                                        <option value="One Month">One Month</option>
+                                        <option value="within 15 days">Within 15 days</option>
+                                      </select>
+                                    </div>
+
+                                    <div class="d-md-flex justify-content-between mb-3 col-12 col-md-12">
+                                      <!-- button -->
+                                      <button class="btn btn-outline-secondary mb-2 mb-md-0" onclick="stepperForm.previous()">Go to Back</button>
+
+                                      <!-- button -->
+                                      <button class="btn btn-primary" onclick="stepperForm.next()">Submit Application</button>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </form>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4 col-12">
+                  <!-- card -->
+                  <div class="card bg-light shadow-none">
+                    <!-- card  body -->
+                    <div class="card-body p-5">
+                      <div class="mb-4">
+                        <img src="../../assets/images/job/job-graphics.svg" alt="">
+                      </div>
+                      <h3 class="mb-3">On registering you can</h3>
+                      <ul class="list-unstyled text-dark mb-0">
+                        <li class="d-flex align-items-start mb-3">
+                          <span class="me-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" class="bi bi-check-circle-fill text-success" viewbox="0 0 16 16">
+                              <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"></path>
+                            </svg>
+                          </span>
+                          <span>Build your profile and let recruiters find you.</span>
+                        </li>
+                        <li class="d-flex align-items-start mb-3">
+                          <span class="me-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" class="bi bi-check-circle-fill text-success" viewbox="0 0 16 16">
+                              <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"></path>
+                            </svg>
+                          </span>
+                          <span>Get job postings delivered right to your email.</span>
+                        </li>
+                        <li class="d-flex align-items-start">
+                          <span class="me-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="currentColor" class="bi bi-check-circle-fill text-success" viewbox="0 0 16 16">
+                              <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z"></path>
+                            </svg>
+                          </span>
+                          <span>Find a Job & grow your career</span>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- col -->
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- Footer -->
+    <!-- footer -->
+<footer class="pt-lg-8 pt-5 footer bg-white">
+    <div class="container mt-lg-2">
+        <div class="row">
+            <div class="col-lg-4 col-md-6 col-12">
+                <!-- about company -->
+                <div class="mb-4">
+                    <img src="../../assets/images/brand/logo/logo.svg" alt="Geeks" class="logo-inverse">
+                    <div class="mt-4">
+                        <p>Geek is feature-rich components and beautifully Bootstrap UIKit for developers, built with bootstrap responsive framework.</p>
+                        <!-- social media -->
+                        <div class="fs-4 mt-4">
+                            <!--Facebook-->
+                            <a href="#" class="me-2">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-facebook" viewbox="0 0 16 16">
+                                    <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"></path>
+                                </svg>
+                            </a>
+                            <!--Twitter-->
+                            <a href="#" class="me-2">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-twitter" viewbox="0 0 16 16">
+                                    <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"></path>
+                                </svg>
+                            </a>
+
+                            <!--GitHub-->
+                            <a href="#">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-instagram" viewbox="0 0 16 16">
+                                    <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"></path>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="offset-lg-1 col-lg-2 col-md-3 col-6">
+                <div class="mb-4">
+                    <!-- list -->
+                    <h3 class="fw-bold mb-3">Company</h3>
+                    <ul class="list-unstyled nav nav-footer flex-column nav-x-0">
+                        <li><a href="#" class="nav-link">About</a></li>
+                        <li><a href="#" class="nav-link">Pricing</a></li>
+                        <li><a href="#" class="nav-link">Blog</a></li>
+                        <li><a href="#" class="nav-link">Careers</a></li>
+                        <li><a href="#" class="nav-link">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-2 col-md-3 col-6">
+                <div class="mb-4">
+                    <!-- list -->
+                    <h3 class="fw-bold mb-3">Support</h3>
+                    <ul class="list-unstyled nav nav-footer flex-column nav-x-0">
+                        <li><a href="#" class="nav-link">Help and Support</a></li>
+                        <li><a href="#" class="nav-link">Become Instructor</a></li>
+                        <li><a href="#" class="nav-link">Get the app</a></li>
+                        <li><a href="#" class="nav-link">FAQ’s</a></li>
+                        <li><a href="#" class="nav-link">Tutorial</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-12">
+                <!-- contact info -->
+                <div class="mb-4">
+                    <h3 class="fw-bold mb-3">Get in touch</h3>
+                    <p>339 McDermott Points Hettingerhaven, NV 15283</p>
+                    <p class="mb-1">
+                        Email:
+                        <a href="#">support@geeksui.com</a>
+                    </p>
+                    <p>
+                        Phone:
+                        <span class="text-dark fw-semibold">(000) 123 456 789</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="row align-items-center g-0 border-top py-2 mt-6">
+            <!-- Desc -->
+            <div class="col-lg-4 col-md-5 col-12">
+                <span>
+                    ©
+                    <span id="copyright2">
+                        <script>
+                            document.getElementById("copyright2").appendChild(document.createTextNode(new Date().getFullYear()));
+                        </script>
+                    </span>
+                    Geeks-UI, Inc. All Rights Reserved
+                </span>
+            </div>
+
+            <!-- Links -->
+            <div class="col-12 col-md-7 col-lg-8 d-md-flex justify-content-end">
+                <nav class="nav nav-footer">
+                    <a class="nav-link ps-0" href="#">Privacy Policy</a>
+                    <a class="nav-link px-2 px-md-3" href="#">Cookie Notice</a>
+
+                    <a class="nav-link" href="#">Terms of Use</a>
+                </nav>
+            </div>
+        </div>
+    </div>
+</footer>
+
+    <!-- Scroll top -->
+    <div class="btn-scroll-top">
+    <svg class="progress-square svg-content" width="100%" height="100%" viewbox="0 0 40 40">
+        <path d="M8 1H32C35.866 1 39 4.13401 39 8V32C39 35.866 35.866 39 32 39H8C4.13401 39 1 35.866 1 32V8C1 4.13401 4.13401 1 8 1Z"></path>
+    </svg>
+</div>
+
+    <!-- Scripts -->
+
+    <!-- Libs JS -->
+<script src="../../assets/libs/%40popperjs/core/dist/umd/popper.min.js"></script>
+<script src="../../assets/libs/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="../../assets/libs/simplebar/dist/simplebar.min.js"></script>
+
+<!-- Theme JS -->
+<script src="../../assets/js/theme.min.js"></script>
+
+    <script src="../../assets/libs/flatpickr/dist/flatpickr.min.js"></script>
+    <script src="../../assets/libs/bs-stepper/dist/js/bs-stepper.min.js"></script>
+    <script src="../../assets/js/vendors/beStepper.js"></script>
+    <script src="../../assets/js/vendors/flatpickr.js"></script>
+    <script src="../../assets/libs/choices.js/public/assets/scripts/choices.min.js"></script>
+
+    <script src="../../assets/js/vendors/choice.js"></script>
+  </body>
+</html>

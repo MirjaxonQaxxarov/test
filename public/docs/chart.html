@@ -1,0 +1,702 @@
+﻿<!doctype html>
+<html lang="en">
+    <head>
+        <!-- Required meta tags -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="author" content="Codescandy">
+
+<!-- Favicon icon-->
+<link rel="shortcut icon" type="image/x-icon" href="../assets/images/favicon/favicon.ico">
+
+<!-- darkmode js -->
+<script src="../assets/js/vendors/darkMode.js"></script>
+
+<!-- Libs CSS -->
+<link href="../assets/fonts/feather/feather.css" rel="stylesheet">
+<link href="../assets/libs/bootstrap-icons/font/bootstrap-icons.min.css" rel="stylesheet">
+<link href="../assets/libs/simplebar/dist/simplebar.min.css" rel="stylesheet">
+
+<!-- Theme CSS -->
+<link rel="stylesheet" href="../assets/css/theme.min.css">
+
+        <link rel="canonical" href="chart.html">
+        <link href="../assets/libs/prismjs/themes/prism-okaidia.min.css" rel="stylesheet">
+        <title>Chart | Geeks - Bootstrap 5 Template</title>
+    </head>
+
+    <body class="bg-white">
+        <!-- Main wrapper -->
+        <div class="docs-main-wrapper">
+            <div class="docs-header">
+    <nav class="navbar navbar-expand-md fixed-top ms-0">
+        <a class="navbar-brand" href="../index.html"><img src="../assets/images/brand/logo/logo.svg" alt="Geeks"></a>
+        <div class="ms-auto d-flex align-items-center">
+            <div class="dropdown">
+                <button class="btn btn-light btn-icon rounded-circle d-flex align-items-center" type="button" aria-expanded="false" data-bs-toggle="dropdown" aria-label="Toggle theme (auto)">
+                    <i class="bi theme-icon-active"></i>
+                    <span class="visually-hidden bs-theme-text">Toggle theme</span>
+                </button>
+                <ul class="dropdown-menu dropdown-menu-end shadow" aria-labelledby="bs-theme-text">
+                    <li>
+                        <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="light" aria-pressed="false">
+                            <i class="bi theme-icon bi-sun-fill"></i>
+                            <span class="ms-2">Light</span>
+                        </button>
+                    </li>
+                    <li>
+                        <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="dark" aria-pressed="false">
+                            <i class="bi theme-icon bi-moon-stars-fill"></i>
+                            <span class="ms-2">Dark</span>
+                        </button>
+                    </li>
+                    <li>
+                        <button type="button" class="dropdown-item d-flex align-items-center active" data-bs-theme-value="auto" aria-pressed="true">
+                            <i class="bi theme-icon bi-circle-half"></i>
+                            <span class="ms-2">Auto</span>
+                        </button>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="d-flex">
+                <div class="me-2 me-lg-0 ms-2">
+                    <a class="btn btn-primary" href="https://bit.ly/geeksui">Buy now</a>
+                </div>
+                <div>
+                    <button class="btn btn-icon navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+</div>
+
+            <!-- Left sidebar -->
+            <!-- Nav Sidebar -->
+<aside class="docs-nav-sidebar">
+  <div class="py-5"></div>
+  <div class="docs-nav">
+    <nav class="navbar navbar-expand-md">
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav flex-column" id="sidebarnav">
+          <li class="navbar-header">
+            <h5 class="heading">Getting Started</h5>
+          </li>
+          <li class="nav-item"><a href="index.html" class="nav-link">Introduction</a></li>
+          <li class="nav-item"><a href="environment-setup.html" class="nav-link">Environment setup</a></li>
+          <li class="nav-item"><a href="working-with-gulp.html" class="nav-link">Working with Gulp</a></li>
+          <li class="nav-item"><a href="npm-scripts.html" class="nav-link">Npm Commands</a></li>
+          <li class="nav-item"><a href="compiled-files.html" class="nav-link">Compiled Files</a></li>
+          <li class="nav-item"><a href="file-structure.html" class="nav-link">File Structure</a></li>
+          <li class="nav-item"><a href="resources-assets.html" class="nav-link">Resources & assets</a></li>
+          <li class="nav-item"><a href="changelog.html" class="nav-link">Changelog</a></li>
+
+          <li>
+            <div class="navbar-border"></div>
+          </li>
+          <li class="navbar-header mt-0">
+            <h5 class="heading">Foundation</h5>
+          </li>
+          <li class="nav-item"><a href="typography.html" class="nav-link">Typography</a></li>
+          <li class="nav-item"><a href="colors.html" class="nav-link">Colors</a></li>
+          <li class="nav-item"><a href="shadows.html" class="nav-link">Shadows</a></li>
+
+          <li>
+            <div class="navbar-border"></div>
+          </li>
+
+          <li class="navbar-header mt-0">
+            <h5 class="heading">Snippet</h5>
+          </li>
+          <li class="nav-item">
+            <a href="bootstrap-5-snippets.html" class="nav-link">Introduction</a>
+          </li>
+          <li class="nav-item">
+            <a href="accordions-snippet.html" class="nav-link">Accordions</a>
+          </li>
+          <li class="nav-item">
+            <a href="card-snippet.html" class="nav-link">Card</a>
+          </li>
+          <li class="nav-item">
+            <a href="chart.html" class="nav-link">Chart</a>
+          </li>
+          <li class="nav-item">
+            <a href="client-snippet.html" class="nav-link">Clients</a>
+          </li>
+          <li class="nav-item">
+            <a href="cta-snippet.html" class="nav-link">CTA</a>
+          </li>
+          <li class="nav-item">
+            <a href="features-snippet.html" class="nav-link">Features</a>
+          </li>
+          <li class="nav-item">
+            <a href="footer-snippet.html" class="nav-link">Footer</a>
+          </li>
+          <li class="nav-item">
+            <a href="header-snippet.html" class="nav-link">Headers</a>
+          </li>
+          <li class="nav-item">
+            <a href="hero-snippet.html" class="nav-link">Hero</a>
+          </li>
+          <li class="nav-item">
+            <a href="image-snippet.html" class="nav-link">Image</a>
+          </li>
+          <li class="nav-item">
+            <a href="integration-snippet.html" class="nav-link">Integrations</a>
+          </li>
+          <li class="nav-item">
+            <a href="pricing.html" class="nav-link">Pricing</a>
+          </li>
+          <li class="nav-item">
+            <a href="reviews.html" class="nav-link">Reviews</a>
+          </li>
+          <li class="nav-item">
+            <a href="slider-snippet.html" class="nav-link">Slider</a>
+          </li>
+          <li class="nav-item">
+            <a href="stats.html" class="nav-link">Stats</a>
+          </li>
+          <li class="nav-item">
+            <a href="tables-snippet.html" class="nav-link">Tables</a>
+          </li>
+          <li class="nav-item">
+            <a href="team-snippet.html" class="nav-link">Team</a>
+          </li>
+          <li class="nav-item">
+            <a href="testimonials-snippet.html" class="nav-link">Testimonials</a>
+          </li>
+          <li class="nav-item">
+            <a href="user-profile.html" class="nav-link">User Profile</a>
+          </li>
+          <li>
+            <div class="navbar-border"></div>
+          </li>
+          <li class="navbar-header mt-0">
+            <h5 class="heading">Components</h5>
+          </li>
+          <li class="nav-item">
+            <a href="accordions.html" class="nav-link">Accordions</a>
+          </li>
+          <li class="nav-item">
+            <a href="alerts.html" class="nav-link">Alerts</a>
+          </li>
+          <li class="nav-item">
+            <a href="avatar.html" class="nav-link">Avatar</a>
+          </li>
+          <li class="nav-item">
+            <a href="badge.html" class="nav-link">Badge</a>
+          </li>
+
+          <li class="nav-item">
+            <a href="breadcrumb.html" class="nav-link">Breadcrumb</a>
+          </li>
+          <li class="nav-item">
+            <a href="buttons.html" class="nav-link">Buttons</a>
+          </li>
+          <li class="nav-item">
+            <a href="button-group.html" class="nav-link">Button group</a>
+          </li>
+          <li class="nav-item">
+            <a href="card.html" class="nav-link">Card</a>
+          </li>
+          <li class="nav-item">
+            <a href="carousel.html" class="nav-link">Carousel</a>
+          </li>
+          <li class="nav-item">
+            <a href="close-button.html" class="nav-link">Close Button</a>
+          </li>
+          <li class="nav-item">
+            <a href="collapse.html" class="nav-link">Collapse</a>
+          </li>
+          <li class="nav-item">
+            <a href="dropdowns.html" class="nav-link">Dropdowns</a>
+          </li>
+          <li class="nav-item">
+            <a href="images.html" class="nav-link">Images</a>
+          </li>
+          <li class="nav-item">
+            <a href="list-group.html" class="nav-link">List group</a>
+          </li>
+
+          <li class="nav-item">
+            <a href="modal.html" class="nav-link">Modal</a>
+          </li>
+          <li class="nav-item">
+            <a href="navs-tabs.html" class="nav-link">Navs and tabs</a>
+          </li>
+          <li class="nav-item">
+            <a href="navbar.html" class="nav-link">Navbar</a>
+          </li>
+          <li class="nav-item">
+            <a href="offcanvas.html" class="nav-link">Offcanvas</a>
+          </li>
+          <li class="nav-item">
+            <a href="pagination.html" class="nav-link">Pagination</a>
+          </li>
+          <li class="nav-item">
+            <a href="placeholders.html" class="nav-link">Placeholders</a>
+          </li>
+          <li class="nav-item">
+            <a href="popovers.html" class="nav-link">Popovers</a>
+          </li>
+          <li class="nav-item">
+            <a href="progress.html" class="nav-link">Progress</a>
+          </li>
+          <li class="nav-item">
+            <a href="scrollspy.html" class="nav-link">Scrollspy</a>
+          </li>
+          <li class="nav-item">
+            <a href="spinners.html" class="nav-link">Spinners</a>
+          </li>
+          <li class="nav-item">
+            <a href="tables.html" class="nav-link">Tables</a>
+          </li>
+          <li class="nav-item">
+            <a href="toasts.html" class="nav-link">Toasts</a>
+          </li>
+          <li class="nav-item">
+            <a href="tooltips.html" class="nav-link">Tooltips</a>
+          </li>
+          <li>
+            <div class="navbar-border"></div>
+          </li>
+          <li class="navbar-header mt-0">
+            <h5 class="heading">Forms</h5>
+          </li>
+          <li class="nav-item">
+            <a href="forms.html" class="nav-link">Basic Forms</a>
+          </li>
+          <li class="nav-item">
+            <a href="advance-forms.html" class="nav-link">Advance Forms</a>
+          </li>
+
+          <li class="nav-item">
+            <a href="dropzone.html" class="nav-link">Dropzone</a>
+          </li>
+          <li class="nav-item">
+            <a href="flatpickr.html" class="nav-link">Datepicker</a>
+          </li>
+          <li class="nav-item">
+            <a href="input-group.html" class="nav-link">Input Group</a>
+          </li>
+          <li class="nav-item">
+            <a href="inputmask.html" class="nav-link">Imask</a>
+          </li>
+          <li class="nav-item">
+            <a href="quill-editor.html" class="nav-link">Quill Editor</a>
+          </li>
+          <li class="nav-item">
+            <a href="tagify.html" class="nav-link">Tagify</a>
+          </li>
+
+          <li>
+            <div class="navbar-border"></div>
+          </li>
+          <li class="navbar-header mt-0">
+            <h5 class="heading">Utilities</h5>
+          </li>
+          <li class="nav-item"><a href="background.html" class="nav-link">Background</a></li>
+          <li class="nav-item"><a href="borders.html" class="nav-link">Borders</a></li>
+          <li class="nav-item"><a href="colored-links.html" class="nav-link">Colored Links</a></li>
+          <li class="nav-item"><a href="opacity.html" class="nav-link">Opacity</a></li>
+          <li class="nav-item"><a href="ratio.html" class="nav-link">Ratio</a></li>
+          <li class="nav-item"><a href="stacks.html" class="nav-link">Stacks</a></li>
+          <li class="nav-item"><a href="text-color.html" class="nav-link">Colors</a></li>
+          <li class="nav-item"><a href="text.html" class="nav-link">Text</a></li>
+          <li class="nav-item"><a href="text-truncation.html" class="nav-link">Text truncation</a></li>
+          <li class="nav-item"><a href="vertical-rule.html" class="nav-link">Vertical rule</a></li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+  <div class="nav-footer">
+    <p class="mb-0">
+      Developed by
+      <a href="https://codescandy.com" target="_blank">Codescandy</a>
+    </p>
+  </div>
+</aside>
+
+            <!-- Wrapper  -->
+            <main class="docs-wrapper">
+                <section class="container-fluid">
+                    <div class="row">
+                        <div class="col-md-12 px-lg-8">
+                            <!-- Content -->
+                            <div class="docs-content">
+                                <div class="row">
+                                    <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                                        <div class="mb-8" id="intro">
+                                            <h1 class="mb-2 fw-bold display-3">Chart</h1>
+                                            <p class="lead">Modern & Interactive Open-source Charts</p>
+                                            <a href="https://apexcharts.com/" target="_blank">
+                                                https://apexcharts.com/
+                                                <i class="fe fe-external-link"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Bar with data chart -->
+                                <div class="row">
+                                    <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                                        <div id="barWithDataChart" class="mb-4 mt-7">
+                                            <h2 class="fw-semibold mb-1">Data with Bar Chart</h2>
+                                            <p class="mb-0">Unlike the Column chart, a JavaScript Bar Chart is oriented in a horizontal manner using rectangular bars.</p>
+                                        </div>
+                                        <!-- Card -->
+                                        <div class="mb-8">
+                                            <ul class="nav nav-line-bottom mb-3" id="pills-tab-barWithDataChart" role="tablist">
+                                                <li class="nav-item">
+                                                    <a class="nav-link active" id="pills-barWithDataChart-design-tab" data-bs-toggle="pill" href="#pills-barWithDataChart-design" role="tab" aria-controls="pills-barWithDataChart-design" aria-selected="true">
+                                                        Design
+                                                    </a>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <a class="nav-link" id="pills-barWithDataChart-html-tab" data-bs-toggle="pill" href="#pills-barWithDataChart-html" role="tab" aria-controls="pills-barWithDataChart-html" aria-selected="false">
+                                                        HTML
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                            <!-- Tab content -->
+                                            <div class="tab-content" id="pills-tabContent-barWithDataChart">
+                                                <div class="tab-pane tab-example-design fade show active p-4 bg-light rounded-3" id="pills-barWithDataChart-design" role="tabpanel" aria-labelledby="pills-barWithDataChart-design-tab">
+                                                    <div class="card p-4">
+                                                        <div class="alert bg-light-warning text-dark-warning alert-dismissible fade show" role="alert">
+                                                            <strong>payout@geeks.com</strong>
+                                                            <p class="mb-0">Your selected payout method was confirmed on Next Payout on 15 July, 2020</p>
+                                                            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                                                        </div>
+                                                        <div class="row mt-6">
+                                                            <div class="col-xl-4 col-lg-4 col-md-12 col-12 mb-3 mb-lg-0">
+                                                                <div class="text-center">
+                                                                    <!-- PayOut Chart -->
+                                                                    <div id="payoutChart" class="apex-charts"></div>
+                                                                    <h4 class="mb-1">Your Earning this month</h4>
+                                                                    <h5 class="mb-0 display-4 fw-bold">$3,210</h5>
+                                                                    <p class="px-4">Update your payout method in settings</p>
+                                                                    <a href="#" class="btn btn-primary">Withdraw Earning</a>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-xl-8 col-lg-8 col-md-12 col-12">
+                                                                <!-- Check Box -->
+                                                                <div class="border p-4 rounded-3 mb-3">
+                                                                    <div class="custom-control custom-radio">
+                                                                        <input type="radio" id="customRadio1" name="customRadio" class="form-check-input" checked="">
+                                                                        <label class="form-check-label" for="customRadio1">
+                                                                            <img src="../assets/images/brand/paypal.svg" alt="">
+                                                                        </label>
+                                                                        <p>Your paypal account has been authorized for payouts.</p>
+                                                                        <a href="#" class="btn btn-outline-primary">Remove Account</a>
+                                                                    </div>
+                                                                </div>
+                                                                <!-- Check Box -->
+                                                                <div class="border p-4 rounded-3 mb-3">
+                                                                    <div class="custom-control custom-radio">
+                                                                        <input type="radio" id="customRadio2" name="customRadio" class="form-check-input">
+                                                                        <label class="form-check-label ps-1" for="customRadio2">
+                                                                            <img src="../assets/images/brand/payoneer.svg" alt="">
+                                                                        </label>
+                                                                    </div>
+                                                                </div>
+                                                                <!-- Check Box -->
+                                                                <div class="border p-4 rounded-3">
+                                                                    <div class="custom-control custom-radio">
+                                                                        <input type="radio" id="customRadio3" name="customRadio" class="form-check-input">
+                                                                        <label class="form-check-label ps-1 h4" for="customRadio3">Bank Transfer</label>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="tab-pane tab-example-html fade" id="pills-barWithDataChart-html" role="tabpanel" aria-labelledby="pills-barWithDataChart-html-tab">
+                                                    <pre><code class="language-markup"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>alert bg-light-warning text-dark-warning alert-dismissible fade show<span class="token punctuation">"</span></span> <span class="token attr-name">role</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>alert<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>strong</span><span class="token punctuation">&gt;</span></span>payout@geeks.com<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>strong</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>mb-0<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>Your selected payout method was confirmed on Next Payout on 15 July, 2020<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>button<span class="token punctuation">"</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>btn-close<span class="token punctuation">"</span></span> <span class="token attr-name">data-bs-dismiss</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>alert<span class="token punctuation">"</span></span> <span class="token attr-name">aria-label</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>Close<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>span</span> <span class="token attr-name">aria-hidden</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>true<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span><span class="token entity named-entity" title="×">&amp;times;</span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>span</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>row mt-6<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>col-xl-4 col-lg-4 col-md-12 col-12 mb-3 mb-lg-0<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>text-center<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+<span class="token comment">&lt;!-- PayOut Chart --&gt;</span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>payoutChart<span class="token punctuation">"</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>apex-charts<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>h4</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>mb-1<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>Your Earning this month<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>h4</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>h5</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>mb-0 display-4 fw-bold<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>$3,210<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>h5</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>px-4<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>Update your payout method in settings<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>#<span class="token punctuation">"</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>btn btn-primary<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+Withdraw Earning
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>col-xl-8 col-lg-8 col-md-12 col-12<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+<span class="token comment">&lt;!-- Check Box --&gt;</span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>border p-4 rounded-3 mb-3<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>custom-control custom-radio<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>input</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>radio<span class="token punctuation">"</span></span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>customRadio1<span class="token punctuation">"</span></span> <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>customRadio<span class="token punctuation">"</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>form-check-input<span class="token punctuation">"</span></span> <span class="token attr-name">checked</span> <span class="token punctuation">/&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>label</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>form-check-label<span class="token punctuation">"</span></span> <span class="token attr-name">for</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>customRadio1<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>img</span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>../assets/images/brand/paypal.svg<span class="token punctuation">"</span></span> <span class="token attr-name">alt</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span><span class="token punctuation">"</span></span> <span class="token punctuation">/&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>label</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span><span class="token punctuation">&gt;</span></span>Your paypal account has been authorized for payouts.<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>#<span class="token punctuation">"</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>btn btn-outline-primary<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span> Remove Account<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+<span class="token comment">&lt;!-- Check Box --&gt;</span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>border p-4 rounded-3 mb-3<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>custom-control custom-radio<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>input</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>radio<span class="token punctuation">"</span></span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>customRadio2<span class="token punctuation">"</span></span> <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>customRadio<span class="token punctuation">"</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>form-check-input<span class="token punctuation">"</span></span> <span class="token punctuation">/&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>label</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>form-check-label ps-1<span class="token punctuation">"</span></span> <span class="token attr-name">for</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>customRadio2<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>img</span> <span class="token attr-name">src</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>../assets/images/brand/payoneer.svg<span class="token punctuation">"</span></span> <span class="token attr-name">alt</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span><span class="token punctuation">"</span></span> <span class="token punctuation">/&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>label</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+<span class="token comment">&lt;!-- Check Box --&gt;</span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>border p-4 rounded-3<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>custom-control custom-radio<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>input</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>radio<span class="token punctuation">"</span></span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>customRadio3<span class="token punctuation">"</span></span> <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>customRadio<span class="token punctuation">"</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>form-check-input<span class="token punctuation">"</span></span> <span class="token punctuation">/&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>label</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>form-check-label ps-1 h4<span class="token punctuation">"</span></span> <span class="token attr-name">for</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>customRadio3<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+Bank Transfer
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>label</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span></code></pre>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- barWithDataChart -->
+                                <!-- Line with data chart -->
+                                <div class="row">
+                                    <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                                        <div id="lineWithDataChart" class="mb-4 mt-7">
+                                            <h2 class="fw-semibold mb-1">Data with Line Chart</h2>
+                                            <p class="mb-0">View samples of line charts below along with the source code, so you can integrate right away.</p>
+                                        </div>
+                                        <!-- Card -->
+                                        <div class="mb-8">
+                                            <ul class="nav nav-line-bottom mb-3" id="pills-tab-lineWithDataChart" role="tablist">
+                                                <li class="nav-item">
+                                                    <a class="nav-link active" id="pills-lineWithDataChart-design-tab" data-bs-toggle="pill" href="#pills-lineWithDataChart-design" role="tab" aria-controls="pills-lineWithDataChart-design" aria-selected="true">
+                                                        Design
+                                                    </a>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <a class="nav-link" id="pills-lineWithDataChart-html-tab" data-bs-toggle="pill" href="#pills-lineWithDataChart-html" role="tab" aria-controls="pills-lineWithDataChart-html" aria-selected="false">
+                                                        HTML
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                            <!-- Tab content -->
+                                            <div class="tab-content" id="pills-tabContent-lineWithDataChart">
+                                                <div class="tab-pane tab-example-design fade show active p-4 bg-light rounded-3" id="pills-lineWithDataChart-design" role="tabpanel" aria-labelledby="pills-lineWithDataChart-design-tab">
+                                                    <div class="row bg-white rounded-3 p-4">
+                                                        <div class="col-xl-3 col-lg-4 col-md-12 col-12 mb-3 mb-lg-0">
+                                                            <div>
+                                                                <i class="fe fe-shopping-cart icon-shape icon-sm rounded-3 bg-light-success text-dark-success mt-2"></i>
+                                                                <h3 class="display-4 fw-bold mt-3 mb-0">$3,210</h3>
+                                                                <span>Your total earnings</span>
+                                                                <hr class="my-4">
+                                                                <div class="row">
+                                                                    <!-- Total earning chart -->
+                                                                    <div class="col ps-0">
+                                                                        <div id="totalEarning" class="apex-charts mt-n4 mb-n3"></div>
+                                                                    </div>
+                                                                    <div class="col-auto">
+                                                                        <span class="badge bg-success">
+                                                                            <i class="fe fe-trending-up fs-6 me-2"></i>
+                                                                            32%
+                                                                        </span>
+                                                                    </div>
+                                                                </div>
+                                                                <p class="mb-0 lh-1.5">Update your payout method in settings.</p>
+                                                            </div>
+                                                        </div>
+                                                        <!-- Earning chart -->
+                                                        <div class="col-xl-9 col-lg-8 col-md-12 col-12">
+                                                            <div id="earningTwo" class="apex-charts"></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="tab-pane tab-example-html fade" id="pills-lineWithDataChart-html" role="tabpanel" aria-labelledby="pills-lineWithDataChart-html-tab">
+                                                    <pre><code class="language-markup"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>row<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>col-xl-3 col-lg-4 col-md-12 col-12 mb-3 mb-lg-0<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span><span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>i</span>
+<span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>fe fe-shopping-cart icon-shape icon-sm rounded-3 bg-light-success text-dark-success mt-2<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>i</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>h3</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>display-4 fw-bold mt-3 mb-0<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>$3,210<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>h3</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>span</span><span class="token punctuation">&gt;</span></span>Your total earnings<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>span</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>hr</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>my-4<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>row<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+<span class="token comment">&lt;!-- Total Earning Chart --&gt;</span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>col ps-0<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+   <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>totalEarning<span class="token punctuation">"</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>apex-charts mt-n4 mb-n3<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>col-auto<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>span</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>badge bg-success <span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>i</span>
+           <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>fe fe-trending-up fs-6 me-2<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>i</span><span class="token punctuation">&gt;</span></span>32%<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>span</span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>mb-0 lh-1.5<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>Update your payout method in settings.<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+<span class="token comment">&lt;!-- Earning Chart --&gt;</span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>col-xl-9 col-lg-8 col-md-12 col-12<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>earningTwo<span class="token punctuation">"</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>apex-charts<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>   </code></pre>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Line with data chart -->
+                                <!-- Dount -->
+                                <div class="row">
+                                    <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                                        <div id="donutChart" class="mb-4 mt-7">
+                                            <h2 class="fw-semibold mb-1">Donut</h2>
+                                            <p class="mb-0">JavaScript Pie Charts and JavaScript Donut Charts are optimally used in the display of just a few sets of data.</p>
+                                        </div>
+                                        <!-- Card -->
+                                        <div class="mb-8">
+                                            <ul class="nav nav-line-bottom mb-3" id="pills-tab-donutChart" role="tablist">
+                                                <li class="nav-item">
+                                                    <a class="nav-link active" id="pills-donutChart-design-tab" data-bs-toggle="pill" href="#pills-donutChart-design" role="tab" aria-controls="pills-donutChart-design" aria-selected="true">
+                                                        Design
+                                                    </a>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <a class="nav-link" id="pills-donutChart-html-tab" data-bs-toggle="pill" href="#pills-donutChart-html" role="tab" aria-controls="pills-donutChart-html" aria-selected="false">
+                                                        HTML
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                            <!-- Tab content -->
+                                            <div class="tab-content" id="pills-tabContent-donutChart">
+                                                <div class="tab-pane tab-example-design fade show active p-4 bg-light rounded-3" id="pills-donutChart-design" role="tabpanel" aria-labelledby="pills-donutChart-design-tab">
+                                                    <!-- donut chart -->
+                                                    <div id="traffic" class="apex-charts d-flex justify-content-center bg-white rounded-3 p-4"></div>
+                                                    <!-- End donut chart -->
+                                                </div>
+                                                <div class="tab-pane tab-example-html fade" id="pills-donutChart-html" role="tabpanel" aria-labelledby="pills-donutChart-html-tab">
+                                                    <pre><code class="language-markup"><span class="token comment">&lt;!-- donut chart --&gt;</span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>traffic<span class="token punctuation">"</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>apex-charts d-flex justify-content-center<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+<span class="token comment">&lt;!-- End donut chart --&gt;</span>  </code></pre>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Dount -->
+                                <!-- Bar -->
+                                <div class="row">
+                                    <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                                        <div id="barChart" class="mb-4 mt-7">
+                                            <h2 class="fw-semibold mb-1">Bar</h2>
+                                            <p class="mb-0">Unlike the Column chart, a JavaScript Bar Chart is oriented in a horizontal manner using rectangular bars.</p>
+                                        </div>
+                                        <!-- Card -->
+                                        <div class="mb-8">
+                                            <ul class="nav nav-line-bottom mb-3" id="pills-tab-barChart" role="tablist">
+                                                <li class="nav-item">
+                                                    <a class="nav-link active" id="pills-barChart-design-tab" data-bs-toggle="pill" href="#pills-barChart-design" role="tab" aria-controls="pills-barChart-design" aria-selected="true">
+                                                        Design
+                                                    </a>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <a class="nav-link" id="pills-barChart-html-tab" data-bs-toggle="pill" href="#pills-barChart-html" role="tab" aria-controls="pills-barChart-html" aria-selected="false">
+                                                        HTML
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                            <!-- Tab content -->
+                                            <div class="tab-content" id="pills-tabContent-barChart">
+                                                <div class="tab-pane tab-example-design fade show active p-4 bg-light rounded-3" id="pills-barChart-design" role="tabpanel" aria-labelledby="pills-barChart-design-tab">
+                                                    <!-- bar chart -->
+                                                    <div id="orderColumn" class="apex-charts card p-4"></div>
+                                                </div>
+                                                <div class="tab-pane tab-example-html fade" id="pills-barChart-html" role="tabpanel" aria-labelledby="pills-barChart-html-tab">
+                                                    <pre><code class="language-markup"> <span class="token comment">&lt;!-- bar chart --&gt;</span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>orderColumn<span class="token punctuation">"</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>apex-charts<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+<span class="token comment">&lt;!-- End bar chart --&gt;</span> </code></pre>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Bar -->
+                                <!-- line -->
+                                <div class="row">
+                                    <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                                        <div id="lineChart" class="mb-4">
+                                            <h2 class="fw-semibold mb-1">Line</h2>
+                                            <p class="mb-0">View samples of line charts below along with the source code, so you can integrate right away.</p>
+                                        </div>
+                                        <!-- Card -->
+                                        <div class="mb-8">
+                                            <ul class="nav nav-line-bottom mb-3" id="pills-tab-lineChart" role="tablist">
+                                                <li class="nav-item">
+                                                    <a class="nav-link active" id="pills-lineChart-design-tab" data-bs-toggle="pill" href="#pills-lineChart-design" role="tab" aria-controls="pills-lineChart-design" aria-selected="true">
+                                                        Design
+                                                    </a>
+                                                </li>
+                                                <li class="nav-item">
+                                                    <a class="nav-link" id="pills-lineChart-html-tab" data-bs-toggle="pill" href="#pills-lineChart-html" role="tab" aria-controls="pills-lineChart-html" aria-selected="false">
+                                                        HTML
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                            <!-- Tab content -->
+                                            <div class="tab-content" id="pills-tabContent-lineChart">
+                                                <div class="tab-pane tab-example-design fade show active p-4 bg-light rounded-3 bg-light p-4 rounded-3" id="pills-lineChart-design" role="tabpanel" aria-labelledby="pills-lineChart-design-tab">
+                                                    <!-- Line chart -->
+                                                    <div id="earning" class="apex-charts card p-4"></div>
+                                                </div>
+                                                <div class="tab-pane tab-example-html fade" id="pills-lineChart-html" role="tabpanel" aria-labelledby="pills-lineChart-html-tab">
+                                                    <pre><code class=" language-markup"><span class="token comment">&lt;!-- Line chart --&gt;</span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>earning<span class="token punctuation">"</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>apex-charts<span class="token punctuation">"</span></span><span class="token punctuation">&gt;</span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">&gt;</span></span>
+<span class="token comment">&lt;!-- End Line chart --&gt;</span></code></pre>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Line -->
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </main>
+        </div>
+
+        <!-- Scroll top -->
+        <div class="btn-scroll-top">
+    <svg class="progress-square svg-content" width="100%" height="100%" viewbox="0 0 40 40">
+        <path d="M8 1H32C35.866 1 39 4.13401 39 8V32C39 35.866 35.866 39 32 39H8C4.13401 39 1 35.866 1 32V8C1 4.13401 4.13401 1 8 1Z"></path>
+    </svg>
+</div>
+
+        <!-- Scripts -->
+        <!-- Libs JS -->
+<script src="../assets/libs/%40popperjs/core/dist/umd/popper.min.js"></script>
+<script src="../assets/libs/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="../assets/libs/simplebar/dist/simplebar.min.js"></script>
+
+<!-- Theme JS -->
+<script src="../assets/js/theme.min.js"></script>
+
+        <script src="../assets/js/vendors/sidebarMenu.js"></script>
+        <script src="../assets/libs/prismjs/prism.js"></script>
+        <script src="../assets/libs/prismjs/components/prism-scss.min.js"></script>
+        <script src="../assets/libs/prismjs/plugins/toolbar/prism-toolbar.min.js"></script>
+        <script src="../assets/libs/prismjs/plugins/copy-to-clipboard/prism-copy-to-clipboard.min.js"></script>
+        <script src="../assets/libs/apexcharts/dist/apexcharts.min.js"></script>
+        <script src="../assets/js/vendors/chart.js"></script>
+    </body>
+</html>
